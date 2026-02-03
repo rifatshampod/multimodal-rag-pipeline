@@ -12,3 +12,10 @@ RAG connects LLMs to external knowledge sources, allowing them to:
 
 Think of it as giving an LLM access to a searchable library before answering.
 
+## Dependencies
+- langchain 
+- langchain-community 
+- langchain_text_splitters 
+- langchain_openai 
+- langchain_chroma 
+- python_dotenv
