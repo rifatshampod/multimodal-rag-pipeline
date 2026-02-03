@@ -1,12 +1,11 @@
 import os
-# ...existing code...
+
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
-# ...existing code...
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import RetrievalQA
+from langchain_text_splitters import RecursiveCharacterTextSplitter, CharacterTextSplitter
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_community.chat_models import ChatOpenAI
+# from langchain_community.chains import RetrievalQA
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,6 +15,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Load Files
+
+# Chunk Files
+
+# Embed and store in Vector DB
 
 
 # def setup_ingestion_pipeline(documents_path: str, persist_directory: str):
